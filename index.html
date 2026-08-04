@@ -3,404 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Briefing interactivo sobre fundamentos y principios de la Interacción Humano-Computadora aplicados al diseño UX." />
-  <title>Fundamentos HCI | Briefing Interactivo</title>
+  <meta name="description" content="Aprende desarrollo de videojuegos y Unity desde cero con cursos profesionales y proyectos prácticos." />
+  <title>Unity GameDev Academy | Cursos de Creación de Videojuegos</title>
   
   <!-- Enlace a la hoja de estilos CSS independiente -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-  <!-- ==========================================
-       ENLACE DE ACCESIBILIDAD (SALTO DE NAVEGACIÓN)
-       Permite a lectores de pantalla saltar directo al contenido principal
-       ========================================== -->
+  <!-- Enlace de accesibilidad para saltar al contenido principal -->
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
   <!-- ==========================================
-       CABECERA DEL SITIO (HEADER Y MENÚ DE NAVEGACIÓN)
+       CABECERA Y NAVEGACIÓN
        ========================================== -->
   <header class="site-header">
     <div class="container nav">
-      <!-- Logo o marca del sitio web -->
-      <a class="brand" href="#inicio" aria-label="Inicio, Fundamentos HCI">
-        <span class="brand-mark" aria-hidden="true">WAPT</span>
-        <span style="color: #00ffcc; text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);">Fundamentos HCI</span>
+      <a class="brand" href="#inicio" aria-label="Inicio, Unity GameDev Academy">
+        <span class="brand-mark" aria-hidden="true">UGC</span>
+        <span style="color: #00ffcc; text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);">Unity Academy</span>
       </a>
 
-      <!-- Botón de Menú Hamburguesa (visible solo en dispositivos móviles/tablets) -->
+      <!-- Botón de Menú Hamburguesa para móviles -->
       <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <!-- Enlaces de navegación principales -->
       <nav aria-label="Navegación principal">
         <ul class="nav-links" id="nav-links">
-          <li><a href="#fundamentos">Fundamentos</a></li>
-          <li><a href="#leyes">Leyes</a></li>
-          <li><a href="#herramientas">Herramientas</a></li>
-          <li><a href="#aplicacion">Aplicación</a></li>
-          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#carrusel">Inicio</a></li>
+          <li><a href="#fundamentos">Módulos</a></li>
+          <li><a href="#galeria">Galería A-B-C</a></li>
+          <li><a href="#aplicacion">Inscripción</a></li>
+          <li><a href="#contacto">Contáctenos</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- ==========================================
-       CONTENIDO PRINCIPAL DE LA PÁGINA (<main>)
-       ========================================== -->
   <main id="contenido">
 
-    <!-- Sección 1: Hero / Portada Principal -->
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Briefing interactivo</span>
-          <h1>Diseñar interfaces que las personas puedan comprender, usar y explicar.</h1>
-          <p>
-            Una introducción práctica a la Interacción Humano-Computadora, la psicología cognitiva y los principios de UX aplicados a decisiones de diseño basadas en evidencia.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#leyes">Explorar principios</a>
-            <a class="btn btn-secondary" href="#aplicacion">Ver caso práctico</a>
-          </div>
-        </div>
-
-        <!-- Panel lateral con resumen de métricas -->
-        <aside class="hero-panel" aria-label="Resumen de criterios del briefing">
-          <div class="hero-panel-top">
-            <div>
-              <strong>Evaluación integral</strong><br />
-              <span style="color: var(--muted); font-size: .9rem;">Diseño, interacción y accesibilidad</span>
-            </div>
-            <span class="status">Enfoque activo</span>
-          </div>
-          <div class="metric-grid">
-            <div class="metric"><strong>4</strong><span>bases cognitivas</span></div>
-            <div class="metric"><strong>7</strong><span>principios Gestalt</span></div>
-            <div class="metric"><strong>3</strong><span>leyes de interacción</span></div>
-            <div class="metric"><strong>5</strong><span>módulos pedagógicos</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Sección 2: Alcance disciplinar y fundamentos (Tarjetas) -->
-    <section class="section" id="fundamentos">
+    <!-- ==========================================
+       CARRUSEL DE VIDEOJUEGOS (NEÓN)
+       ========================================== -->
+    <section class="section" id="carrusel" style="padding-top: 2rem;">
       <div class="container">
         <div class="section-heading">
           <div>
-            <span class="eyebrow">01 · Alcance disciplinar</span>
-            <h2>HCI va más allá de las reglas visuales.</h2>
+            <span class="eyebrow">Aprende con motor Unity</span>
+            <h2>Domina la creación de videojuegos</h2>
           </div>
-          <p>
-            Una práctica rigurosa integra procesos cognitivos, mecanismos de interacción y conceptos de diseño para comprender cómo el usuario interpreta, decide y actúa.
-          </p>
+          <p>Desarrolla desde juegos 2D independientes hasta mundos 3D inmersivos con C# y Unity.</p>
+        </div>
+
+        <!-- Contenedor principal del Carrusel con efecto Neón -->
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track">
+            <div class="carousel-slide active"><img src="imagenes/1.jpg" alt="Curso Unity 1"></div>
+            <div class="carousel-slide"><img src="imagenes/2.jpg" alt="Curso Unity 2"></div>
+            <div class="carousel-slide"><img src="imagenes/3.jpeg" alt="Curso Unity 3"></div>
+            <div class="carousel-slide"><img src="imagenes/4.jpg" alt="Curso Unity 4"></div>
+            <div class="carousel-slide"><img src="imagenes/5.png" alt="Curso Unity 5"></div>
+          </div>
+          <!-- Botones de control del carrusel -->
+          <button class="carousel-btn prev" id="carousel-prev" aria-label="Imagen anterior">&#10094;</button>
+          <button class="carousel-btn next" id="carousel-next" aria-label="Imagen siguiente">&#10095;</button>
+          <!-- Indicadores (puntos) -->
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+       SECCIÓN CON FONDO (Ancho de un cuarto de ventana)
+       ========================================== -->
+    <section class="section section-bg-banner" id="fundamentos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Ruta de aprendizaje</span>
+            <h2>De principiante a Desarrollador Pro</h2>
+          </div>
+          <p>Construye mecánicas reales, física de juego, scripting en C# y optimización gráfica.</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <div class="number">A</div>
-            <h3>Procesos cognitivos</h3>
-            <p>Percepción, memoria, atención y carga cognitiva condicionan la facilidad con la que se procesa una interfaz.</p>
+            <div class="number">01</div>
+            <h3>Programación C# en Unity</h3>
+            <p>Aprende lógica de programación aplicada a videojuegos, control de personajes y eventos en tiempo real.</p>
           </article>
           <article class="card">
-            <div class="number">B</div>
-            <h3>Mecánicas de interacción</h3>
-            <p>El feedback, la consistencia y la prevención de errores convierten acciones inciertas en experiencias predecibles.</p>
+            <div class="number">02</div>
+            <h3>Diseño de Niveles 2D y 3D</h3>
+            <p>Domina Tilemaps, iluminación global, materiales, shaders y diseño de escenarios inmersivos.</p>
           </article>
           <article class="card">
-            <div class="number">C</div>
-            <h3>Conceptos de diseño</h3>
-            <p>Los modelos mentales, las affordances y la accesibilidad ayudan a construir interfaces comprensibles e inclusivas.</p>
+            <div class="number">03</div>
+            <h3>Inteligencia Artificial</h3>
+            <p>Configura comportamientos enemigos mediante NavMesh, rutinas de combate y árboles de decisión.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Sección 3: Leyes de Interacción y Percepción + Demostraciones Interactivas -->
-    <section class="section section-soft" id="leyes">
+    <!-- ==========================================
+       SECCIÓN A-B-C CON IMÁGENES CUADRADAS Y EXPLICACIONES
+       ========================================== -->
+    <section class="section section-soft" id="galeria">
       <div class="container">
         <div class="section-heading">
           <div>
-            <span class="eyebrow">02 · Interacción y percepción</span>
-            <h2>Leyes que orientan decisiones concretas.</h2>
+            <span class="eyebrow">Especializaciones</span>
+            <h2>Elige tu enfoque de desarrollo</h2>
           </div>
-          <p>
-            Estas leyes no son recetas aisladas: funcionan mejor cuando se conectan con tareas reales, contexto de uso y evidencia de usuarios.
-          </p>
+          <p>Potencia tus habilidades creativas y técnicas eligiendo la rama que más te apasione.</p>
         </div>
 
-        <div class="law-grid">
-          <article class="law-card">
-            <h3>Ley de Fitts</h3>
-            <p>El tiempo de selección depende de la distancia y del tamaño del objetivo.</p>
-            <ul>
-              <li>Botones principales amplios.</li>
-              <li>Separación adecuada entre controles.</li>
-              <li>Objetivos táctiles fáciles de alcanzar.</li>
-            </ul>
-          </article>
-          <article class="law-card">
-            <h3>Ley de Hick</h3>
-            <p>Más alternativas aumentan el tiempo y el esfuerzo necesarios para decidir.</p>
-            <ul>
-              <li>Agrupar y jerarquizar.</li>
-              <li>Aplicar filtros y búsqueda.</li>
-              <li>Usar revelación progresiva.</li>
-            </ul>
-          </article>
-          <article class="law-card">
-            <h3>Ley de Jakob</h3>
-            <p>Las personas esperan que una interfaz se comporte como otros productos que ya conocen.</p>
-            <ul>
-              <li>Respetar convenciones útiles.</li>
-              <li>Apoyar modelos mentales existentes.</li>
-              <li>Innovar sin sacrificar claridad.</li>
-            </ul>
-          </article>
-          <article class="law-card">
-            <h3>Principios Gestalt</h3>
-            <p>La organización visual influye en cómo se agrupan, priorizan e interpretan los elementos.</p>
-            <ul>
-              <li>Proximidad y similitud.</li>
-              <li>Continuidad y cierre.</li>
-              <li>Región común, figura-fondo y destino común.</li>
-            </ul>
-          </article>
-        </div>
-
-        <!-- Contenedor de demostraciones interactivas de JavaScript -->
-        <div class="demo-panel" aria-label="Demostraciones interactivas de las leyes de Fitts y Hick">
-          <section class="demo-box">
-            <h3>Demostración: objetivos táctiles</h3>
-            <p style="color: var(--muted);">Compara la facilidad para seleccionar un objetivo pequeño frente a uno amplio.</p>
-            <div class="target-row">
-              <button class="target-small" aria-label="Objetivo táctil pequeño" data-target="small"></button>
-              <button class="target-large" aria-label="Objetivo táctil grande" data-target="large">64</button>
+        <div class="cards">
+          <article class="card abc-card">
+            <div class="abc-img-container">
+              <img src="imagenes/a.jpg" alt="Especialización A" class="abc-img">
             </div>
-            <p id="fitts-feedback" role="status" aria-live="polite" style="margin-bottom: 0; color: #00ffcc; font-weight: 700;">Selecciona uno de los objetivos.</p>
-          </section>
-
-          <section class="demo-box">
-            <h3>Demostración: gestión de opciones</h3>
-            <p style="color: var(--muted);">Las opciones están agrupadas por intención para reducir la exploración.</p>
-            <div class="choice-grid" id="choice-grid">
-              <button class="choice" aria-pressed="false">Crear cuenta</button>
-              <button class="choice" aria-pressed="false">Iniciar sesión</button>
-              <button class="choice" aria-pressed="false">Recuperar acceso</button>
-              <button class="choice" aria-pressed="false">Contactar soporte</button>
-            </div>
-            <p id="hick-feedback" role="status" aria-live="polite" style="margin-bottom: 0; color: #00ffcc; font-weight: 700;">Elige una acción principal.</p>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección 4: Tabla de Cognición y Usabilidad -->
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="eyebrow">03 · Cognición y usabilidad</span>
-            <h2>Diseñar para capacidades humanas reales.</h2>
-          </div>
-          <p>La interfaz debe reducir esfuerzo innecesario, ofrecer señales claras y permitir la recuperación cuando algo sale mal.</p>
-        </div>
-
-        <table class="principles-table">
-          <thead>
-            <tr>
-              <th scope="col">Concepto</th>
-              <th scope="col">Aplicación recomendada</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Memoria</strong></td>
-              <td>Mostrar información contextual y evitar que la persona recuerde datos entre pasos.</td>
-            </tr>
-            <tr>
-              <td><strong>Carga cognitiva</strong></td>
-              <td>Simplificar tareas, dividir procesos y retirar elementos que no ayudan al objetivo principal.</td>
-            </tr>
-            <tr>
-              <td><strong>Retroalimentación</strong></td>
-              <td>Comunicar estados, confirmaciones, tiempos de espera y resultados de cada acción.</td>
-            </tr>
-            <tr>
-              <td><strong>Errores</strong></td>
-              <td>Prevenir entradas inválidas y ofrecer mensajes útiles, corrección y opciones de deshacer.</td>
-            </tr>
-            <tr>
-              <td><strong>Consistencia</strong></td>
-              <td>Mantener patrones internos estables y respetar convenciones externas conocidas.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Sección 5: Herramientas (User flows y mapas de empatía) -->
-    <section class="section section-soft" id="herramientas">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="eyebrow">04 · Modelado y empatía</span>
-            <h2>Herramientas conectadas con evidencia.</h2>
-          </div>
-          <p>Los diagramas y mapas aportan valor solo cuando representan necesidades, tareas y comportamientos observados.</p>
-        </div>
-
-        <div class="tool-grid">
-          <article class="tool-card">
-            <h3>User flows</h3>
-            <p>Representan cómo una persona entra, actúa, decide, se equivoca y alcanza un resultado.</p>
-            <div class="tag-list" aria-label="Elementos de un flujo de usuario">
-              <span class="tag">Punto de entrada</span>
-              <span class="tag">Acciones</span>
-              <span class="tag">Decisiones</span>
-              <span class="tag">Errores</span>
-              <span class="tag">Rutas alternativas</span>
-            </div>
+            <h3>A. Programación de Gameplay</h3>
+            <p>Enfócate en la lógica interna del videojuego, sistemas de inventario, combate fluido y gestión de estados del jugador.</p>
           </article>
-          <article class="tool-card">
-            <h3>Mapas de empatía</h3>
-            <p>Organizan hallazgos sobre lo que la persona dice, piensa, hace y siente sin reemplazar la investigación.</p>
-            <div class="tag-list" aria-label="Fuentes de evidencia para mapas de empatía">
-              <span class="tag">Entrevistas</span>
-              <span class="tag">Observación</span>
-              <span class="tag">Encuestas</span>
-              <span class="tag">Pruebas de usabilidad</span>
+
+          <article class="card abc-card">
+            <div class="abc-img-container">
+              <img src="imagenes/b.jpg" alt="Especialización B" class="abc-img">
             </div>
+            <h3>B. Arte y Animación 3D</h3>
+            <p>Especialízate en la integración de modelos 3D, rigging, animación de esqueletos y efectos visuales de partículas (VFX).</p>
+          </article>
+
+          <article class="card abc-card">
+            <div class="abc-img-container">
+              <img src="imagenes/c.png" alt="Especialización C" class="abc-img">
+            </div>
+            <h3>C. Optimización y Publicación</h3>
+            <p>Aprende a compilar tu videojuego para PC, consolas y móviles garantizando un rendimiento óptimo de 60 FPS.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Sección 6: Solución explicable y Checklist de criterios -->
-    <section class="section">
-      <div class="container explainable">
-        <div class="quote-card">
-          <p>“Una solución funcional explicable permite relacionar cada decisión de diseño con un principio, una evidencia o un requisito.”</p>
-          <span>Diseño argumentado, no decorativo.</span>
-        </div>
-
-        <div class="checklist" aria-label="Criterios de una solución explicable">
-          <div class="check-item">
-            <span class="check-icon" aria-hidden="true">✓</span>
-            <div><strong>Principios cognitivos</strong><br /><span style="color: var(--muted);">La decisión responde a cómo las personas perciben, recuerdan y deciden.</span></div>
-          </div>
-          <div class="check-item">
-            <span class="check-icon" aria-hidden="true">✓</span>
-            <div><strong>Evidencia de usuarios</strong><br /><span style="color: var(--muted);">La solución se apoya en datos cualitativos o cuantitativos.</span></div>
-          </div>
-          <div class="check-item">
-            <span class="check-icon" aria-hidden="true">✓</span>
-            <div><strong>Requisitos y accesibilidad</strong><br /><span style="color: var(--muted);">La interfaz cumple funciones, restricciones y criterios WCAG.</span></div>
-          </div>
-          <div class="check-item">
-            <span class="check-icon" aria-hidden="true">✓</span>
-            <div><strong>Trade-offs explícitos</strong><br /><span style="color: var(--muted);">Se explica por qué un patrón fue elegido frente a otras alternativas.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sección 7: Integración pedagógica (Lista enumerada con CSS) -->
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <span class="eyebrow">05 · Integración pedagógica</span>
-            <h2>Una secuencia modular y progresiva.</h2>
-          </div>
-          <p>El recorrido comienza con la comprensión de la cognición humana y termina con la validación de soluciones mediante accesibilidad y pruebas.</p>
-        </div>
-
-        <ol class="module-list">
-          <li><div><strong>Fundamentos cognitivos y perceptuales</strong><br /><span style="color: var(--muted);">Gestalt, percepción, memoria y atención.</span></div></li>
-          <li><div><strong>Leyes de interacción y affordances</strong><br /><span style="color: var(--muted);">Fitts, Hick, Jakob y señales de uso.</span></div></li>
-          <li><div><strong>Feedback y gestión de errores</strong><br /><span style="color: var(--muted);">Estados, consistencia, prevención y recuperación.</span></div></li>
-          <li><div><strong>Accesibilidad y pruebas</strong><br /><span style="color: var(--muted);">WCAG, teclado, lectores de pantalla y validación con usuarios.</span></div></li>
-          <li><div><strong>Modelado basado en datos</strong><br /><span style="color: var(--muted);">User flows y mapas de empatía sustentados en evidencia.</span></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Sección 8: Caso Práctico / Formulario de Registro -->
+    <!-- ==========================================
+       FORMULARIO DE REGISTRO Y CONTACTO WHATSAPP
+       ========================================== -->
     <section class="section" id="aplicacion">
       <div class="container">
         <div class="section-heading">
           <div>
-            <span class="eyebrow">Caso práctico</span>
-            <h2>Formulario de registro móvil.</h2>
+            <span class="eyebrow">Inscripciones abiertas</span>
+            <h2>Formulario de Registro de Aspirantes</h2>
           </div>
-          <p>Este ejemplo aplica revelación progresiva, objetivos táctiles amplios, validación en línea y feedback accesible.</p>
+          <p>Completa tus datos para asegurar tu cupo en nuestra próxima cohorte de desarrollo de videojuegos con Unity.</p>
         </div>
 
         <div class="form-demo">
-          <div class="progress" aria-label="Progreso del formulario: paso 1 de 2"><span></span></div>
+          <div class="progress" aria-label="Progreso del formulario"><span></span></div>
           <form id="registration-form" novalidate>
             <div class="form-grid">
               <div class="field">
-                <label for="name">Nombre completo</label>
-                <input id="name" name="name" autocomplete="name" required aria-describedby="name-help name-error" />
-                <small id="name-help">Usa el nombre con el que deseas identificarte.</small>
-                <span class="field-error" id="name-error" aria-live="polite"></span>
+                <label for="nombres">Nombres</label>
+                <input id="nombres" name="nombres" required autocomplete="given-name" />
+                <span class="field-error" id="nombres-error" aria-live="polite"></span>
               </div>
               <div class="field">
-                <label for="email">Correo electrónico</label>
-                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-help email-error" />
-                <small id="email-help">Te enviaremos una confirmación de registro.</small>
+                <label for="apellidos">Apellidos</label>
+                <input id="apellidos" name="apellidos" required autocomplete="family-name" />
+                <span class="field-error" id="apellidos-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="documento">Documento de Identidad</label>
+                <input id="documento" name="documento" type="number" required />
+                <span class="field-error" id="documento-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="email">Correo Electrónico (Email)</label>
+                <input id="email" name="email" type="email" required autocomplete="email" />
                 <span class="field-error" id="email-error" aria-live="polite"></span>
               </div>
             </div>
 
-            <div style="display: flex; justify-content: flex-end; margin-top: 1rem;">
-              <button class="btn btn-primary" type="submit">Continuar</button>
+            <div class="field" style="margin-top: 1rem;" id="contacto">
+              <label for="mensaje-contacto">Apartado de Contáctenos / Comentarios</label>
+              <textarea id="mensaje-contacto" rows="3" placeholder="Escribe aquí tus dudas o requerimientos especiales..." style="width:100%; min-height:80px; padding:0.75rem; border-radius:10px; border:1px solid var(--border); background:var(--surface-soft); color:var(--text);"></textarea>
             </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+              <!-- Botón flotante de WhatsApp con enlace directo -->
+              <a href="https://wa.me/573125168470?text=quiero%20solicitar%20informacion%20para%20registrarme%20en%20el%20curso" target="_blank" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Chatea en WhatsApp</span>
+              </a>
+
+              <button class="btn btn-primary" type="submit">Enviar Registro</button>
+            </div>
+
             <div class="feedback" id="form-feedback" role="status" aria-live="polite" tabindex="-1" hidden>
-              Datos válidos. Puedes continuar al siguiente paso.
+              ¡Registro exitoso! Nos pondremos en contacto contigo muy pronto.
             </div>
           </form>
         </div>
       </div>
     </section>
-
-    <!-- Sección 9: Ubicación / Mapa de Google Maps Integrado -->
-    <section class="section" id="ubicacion">
-      <div class="container">
-        <div class="section-heading" style="text-align: center; grid-template-columns: 1fr; margin-bottom: 2rem;">
-          <div>
-            <span class="eyebrow">Ubicación</span>
-            <h2>Visítanos en nuestra sede</h2>
-          </div>
-          <p>Encuentra nuestra ubicación exacta en el mapa interactivo.</p>
-        </div>
-
-        <!-- Contenedor responsivo con diseño de borde neón -->
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.840259883529!2d-74.07121190321047!3d4.622572799999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99863dcf4189%3A0xf71ec9bcbcd73fdb!2sInstituci%C3%B3n%20Universitaria%20de%20Colombia%2C%20Sede%202!5e0!3m2!1ses-419!2sco!4v1785790122101!5m2!1ses-419!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- ==========================================
-       PIE DE PÁGINA (FOOTER)
-       ========================================== -->
   <footer>
-    <div class="container" style="text-align: center;">Briefing interactivo de Fundamentos y Principios de HCI · Diseño corporativo, claro y accesible.</div>
+    <div class="container" style="text-align: center;">Unity GameDev Academy · Todos los derechos reservados 2026.</div>
   </footer>
 
   <!-- ==========================================
-       LÓGICA JAVASCRIPT Y FUNCIONES INTERACTIVAS
+       LÓGICA JAVASCRIPT (Menú, Carrusel y Formulario)
        ========================================== -->
   <script>
-    // 1. Control del menú hamburguesa responsivo
+    // 1. Menú Hamburguesa Móvil
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
 
@@ -411,7 +232,6 @@
       navLinks.classList.toggle('active');
     });
 
-    // 2. Cierre automático del menú móvil al hacer clic en un enlace de navegación
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         menuToggle.setAttribute('aria-expanded', 'false');
@@ -420,62 +240,89 @@
       });
     });
 
-    // 3. Demostración interactiva de la Ley de Fitts
-    const fittsFeedback = document.getElementById('fitts-feedback');
-    document.querySelectorAll('[data-target]').forEach((button) => {
-      button.addEventListener('click', () => {
-        const isLarge = button.dataset.target === 'large';
-        fittsFeedback.textContent = isLarge
-          ? 'Objetivo amplio: selección más rápida y con menor riesgo de error.'
-          : 'Objetivo pequeño: requiere mayor precisión y aumenta la probabilidad de error.';
+    // 2. Carrusel Interactivo de Videojuegos
+    const track = document.getElementById('carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = document.getElementById('carousel-next');
+    const prevButton = document.getElementById('carousel-prev');
+    const dotsNav = document.getElementById('carousel-dots');
+    let currentIndex = 0;
+
+    slides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        moveToSlide(index);
       });
+      dotsNav.appendChild(dot);
+    });
+    const dots = Array.from(dotsNav.children);
+
+    function updateDots(targetIndex) {
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[targetIndex].classList.add('active');
+    }
+
+    function moveToSlide(targetIndex) {
+      slides.forEach((slide, idx) => {
+        slide.classList.remove('active');
+        if (idx === targetIndex) slide.classList.add('active');
+      });
+      currentIndex = targetIndex;
+      updateDots(currentIndex);
+    }
+
+    nextButton.addEventListener('click', () => {
+      let nextIndex = (currentIndex + 1) % slides.length;
+      moveToSlide(nextIndex);
     });
 
-    // 4. Demostración interactiva de la Ley de Hick
-    const choices = document.querySelectorAll('.choice');
-    const hickFeedback = document.getElementById('hick-feedback');
-    choices.forEach((choice) => {
-      choice.addEventListener('click', () => {
-        choices.forEach((item) => item.setAttribute('aria-pressed', 'false'));
-        choice.setAttribute('aria-pressed', 'true');
-        hickFeedback.textContent = `Acción seleccionada: ${choice.textContent}. La jerarquía reduce la carga de decisión.`;
-      });
+    prevButton.addEventListener('click', () => {
+      let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      moveToSlide(prevIndex);
     });
 
-    // 5. Validación del formulario interactivo
+    setInterval(() => {
+      let nextIndex = (currentIndex + 1) % slides.length;
+      moveToSlide(nextIndex);
+    }, 4000);
+
+    // 3. Validación del Formulario
     const form = document.getElementById('registration-form');
-    const nameInput = document.getElementById('name');
+    const nombresInput = document.getElementById('nombres');
+    const apellidosInput = document.getElementById('apellidos');
+    const documentoInput = document.getElementById('documento');
     const emailInput = document.getElementById('email');
-    const nameError = document.getElementById('name-error');
-    const emailError = document.getElementById('email-error');
     const formFeedback = document.getElementById('form-feedback');
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
       let valid = true;
-      nameError.textContent = '';
-      emailError.textContent = '';
       formFeedback.hidden = true;
 
-      if (!nameInput.value.trim()) {
-        nameError.textContent = 'Escribe tu nombre completo.';
+      document.querySelectorAll('.field-error').forEach(el => el.textContent = '');
+
+      if (!nombresInput.value.trim()) {
+        document.getElementById('nombres-error').textContent = 'Ingrese sus nombres.';
         valid = false;
       }
-
-      if (!emailInput.value.trim()) {
-        emailError.textContent = 'Escribe tu correo electrónico.';
+      if (!apellidosInput.value.trim()) {
+        document.getElementById('apellidos-error').textContent = 'Ingrese sus apellidos.';
         valid = false;
-      } else if (!emailInput.validity.valid) {
-        emailError.textContent = 'Usa un formato válido, por ejemplo: nombre@empresa.com.';
+      }
+      if (!documentoInput.value.trim()) {
+        document.getElementById('documento-error').textContent = 'Ingrese su documento.';
+        valid = false;
+      }
+      if (!emailInput.value.trim() || !emailInput.validity.valid) {
+        document.getElementById('email-error').textContent = 'Ingrese un correo electrónico válido.';
         valid = false;
       }
 
       if (valid) {
         formFeedback.hidden = false;
         formFeedback.focus?.();
-      } else {
-        const firstInvalid = !nameInput.value.trim() ? nameInput : emailInput;
-        firstInvalid.focus();
+        form.reset();
       }
     });
   </script>
